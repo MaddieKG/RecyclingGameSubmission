@@ -14,7 +14,7 @@ public class scorerCo : MonoBehaviour
     {
         GameObject wall = GameObject.Find("wall");
         int score = 0;
-        if (other.gameObject.tag == "compost")
+        if (GameObject.Find("Sphere").GetComponent<randomizeObj>().Getptag() == "compost")
         {
             score = 1;
         }

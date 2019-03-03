@@ -124,6 +124,7 @@ public class throwObj : MonoBehaviour
         this.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
         this.GetComponent<Rigidbody>().useGravity = false;
         thrown = holding = false;
+        GameObject.Find("Sphere").GetComponent<randomizeObj>().generateANewTexture();
 
     }
 

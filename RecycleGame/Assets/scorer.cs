@@ -18,7 +18,7 @@ public class scorer : MonoBehaviour
     {
         GameObject wall = GameObject.Find("wall");
         int score = 0;
-        if (other.gameObject.tag == "garbage") {
+        if (GameObject.Find("Sphere").GetComponent<randomizeObj>().Getptag() == "garbage") {
             score = 1;
         }
         else
